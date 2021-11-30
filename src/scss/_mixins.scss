@@ -1,0 +1,31 @@
+@mixin button-style($color) {
+  color: $color;
+  border-color: $color;
+  background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus,
+  &:active:hover {
+    color: darken($color, 25%);
+    border-color: darken($color, 25%);
+    background-color: transparent;
+  }
+}
+
+@mixin custom-primary2($color) {
+  color: #000;
+  background-color: $color;
+  border-color: $color;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus,
+  &:active:hover {
+    color: #000;
+    background-color: darken($color, 10%);
+    border-color: darken($color, 10%);
+  }
+}

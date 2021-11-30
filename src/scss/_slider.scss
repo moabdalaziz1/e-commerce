@@ -1,0 +1,33 @@
+@import './variables';
+//بداية تنسيق مكون البحث حسب السعر
+.ui-slider {
+  margin: 25px 0 15px;
+  height: 2px !important;
+  background-color: #c5c5c5 !important;
+
+  .ui-slider-handle {
+    background-color: $brand-primary !important;
+    border: none !important;
+    border-radius: 50%;
+    height: 12px !important;
+    width: 12px !important;
+    top: -6px !important;
+  }
+
+  .ui-slider-range {
+    border: 1px solid $brand-primary !important;
+    top: -1px !important;
+    background-color: $brand-primary !important;
+  }
+}
+
+@media (max-width: 991.5px) {
+  /*Search page*/
+  .ui-slider {
+    .ui-slider-handle {
+      width: 20px !important;
+      height: 20px !important;
+      top: -10px !important;
+    }
+  }
+}
